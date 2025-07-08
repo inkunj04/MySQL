@@ -65,7 +65,6 @@ select city,name, count(rollno) from student group by city, name;
 select city,name, avg(marks) from student group by city, name;
 
 -- Q) write the query to find avg marks in each city in ascending order
-select city, avg(marks) from student group by city order by city;
 select city, avg(marks) from student group by city order by avg(marks) desc;
 
 
